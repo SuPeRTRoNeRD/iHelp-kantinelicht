@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
 
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+	jQuery(function($) {
+		$('.itemgreen').click(function() {
+			console.log('popup shown');
+			$('.popupgreen').slideDown();
+		});
+		$('.itemblue').click(function() {
+			console.log('popup shown');
+			$('.popupblue').slideDown();
+		});
+		$('.itemred').click(function() {
+			console.log('popup shown');
+			$('.popupred').slideDown();
+		});
+		$('.itempurple').click(function() {
+			console.log('popup shown');
+			$('.popuppurple').slideDown();
+		});
+		$('.ben').click(function() {
+			console.log('.popup color has been changed to blue');
+			$('.popup').css({
+				'background' : 'blue'
+			});
+		});
+		$('.popupgreen a').click(function() {
+			console.log('.popup hidden ');
+			$('.popupgreen').slideUp();
+		});
+		$('.popupblue a').click(function() {
+			console.log('.popup hidden ');
+			$('.popupblue').slideUp();
+		});
+		$('.popupred a').click(function() {
+			console.log('.popup hidden ');
+			$('.popupred').slideUp();
+		});
+		$('.popuppurple a').click(function() {
+			console.log('.popup hidden ');
+			$('.popuppurple').slideUp();
+		});
+	});
+	</script>
+<script>
+$('.').ready(function(){
+    $("p").click(function(){
+        alert("Fuck this shit i'm out");
+    });
+});
+</script>
+
+</head>
+<body>
+<!--
+//©letsbuildyourwebsite.wordpress.com Ben Stokmans//
+-->
+<div class="itemgreen" class="item">
+	<div class="item-image">
+		<img src="#" alt="">
+	</div>
+	<p class="item-description">Groen</p>
+</div>
+
+<div class="itemblue">
+	<div class="item-image">
+		<img src="#" alt="">
+	</div>
+	<p class="item-description">Blauw</p>
+</div>
+
+<div class="itemred">
+	<div class="item-image">
+		<img src="#" alt="">
+	</div>
+	<p class="item-description">Rood</p>
+</div>
+
+<div class="itempurple">
+	<div class="item-image">
+		<img src="#" alt="">
+	</div>
+	<p class="item-description">Paars</p>
+</div>
+
+<div class="popupgreen">
+	<a class="popuplink">Je stem voor Groen is doorgegeven</a>
+	<a href="#">X</a>
+</div>
+<div class="popupblue">
+	<a class="popuplink">Je stem voor Blauw is doorgegeven</a>
+	<a href="#">X</a>
+</div>
+<div class="popupred">
+	<a class="popuplink">Je stem voor Rood is doorgegeven</a>
+	<a href="#">X</a>
+</div>
+<div class="popuppurple">
+	<a class="popuplink">Je stem voor Paars is doorgegeven</a>
+	<a href="#">X</a>
+</div>
+
+</body>
+</html>
