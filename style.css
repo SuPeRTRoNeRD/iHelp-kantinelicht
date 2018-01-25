@@ -1,0 +1,252 @@
+sbody {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+.itemgreen {
+	width: 100px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: 10px;
+	padding: 0px;
+	background-color: green;
+	margin-left: 400px;
+	margin-top: 275px;
+
+}
+.itemblue {
+	width: 100px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: 10px;
+	padding: 0px;
+	background-color: blue;
+	margin-top: 275px;
+}
+.itemred {
+	width: 100px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: 10px;
+	padding: 0px;
+	background-color: red;
+	margin-top: 275px;
+}
+.itempurple {
+	width: 100px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: 10px;
+	padding: 0px;
+	background-color: purple;
+	margin-top: 275px;
+}
+
+.items {
+	width: 100px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: 10px;
+	padding: 0px;
+}
+.itemfirst {
+	width: 100px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: 10px;
+	padding: 0px;
+}
+.lastitem {
+	width: 200px;
+}
+
+.popupgreen {
+	display: none;
+	background: green;
+	padding: 20px;
+	border: 2px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: 25px;
+	margin-left: -180px;
+}
+.popupblue {
+	display: none;
+	background: blue;
+	padding: 20px;
+	border: 2px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: 25px;
+	margin-left: -180px;
+}
+.popupred {
+	display: none;
+	background: red;
+	padding: 20px;
+	border: 2px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: 25px;
+	margin-left: -180px;
+}
+.popuppurple {
+	display: none;
+	background: purple;
+	padding: 20px;
+	border: 2px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: 25px;
+	margin-left: -180px;
+}
+
+.popupgreen a {
+	text-decoration: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 2px solid black;
+	padding:2px;
+}
+.popupblue a {
+	text-decoration: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 2px solid black;
+	padding:2px;
+}
+.popupred a {
+	text-decoration: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 2px solid black;
+	padding:2px;
+}
+.popuppurple a {
+	text-decoration: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 2px solid black;
+	padding:2px;
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+span.drop {
+	color: black;
+	border: 2px solid black;
+	background-color: lightgreen;
+	margin-bottom: 3px;
+}
+span.drop2 {
+	color: black;
+	border: 2px solid black;
+	background-color: lightgreen;
+	margin-bottom: 3px;
+}
+ol {
+    font-family: ;
+    font-size: 20px;
+    color: blue;
+    padding-right:;
+    border: 2px solid black;
+}
+a.popuplink {
+	margin-right: 10px;
+	border: none;
+}
+p {
+	margin-left: 2px;
+}
+div.block {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	background-color: blue;
+}
+button.animate {
+	width: 200px;
+	height: 50px;
+	color: black;
+	background-color: lightblue;
+}
+button:focus {
+	outline: 0;
+}
+.linkh{
+	color: black;
+	float: left;
+}
+.inner1 {
+	float:left; 
+}
+.inner2 {
+	float: left; 
+	clear: left;
+}
+
+div.linkan {
+	position: fixed;
+	right: 0;
+	top: 0;
+}
