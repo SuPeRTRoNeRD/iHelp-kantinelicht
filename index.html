@@ -1,97 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
-
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script>
-	jQuery(function($) {
-		$('.itemgreen').click(function() {
-			console.error('Vote could not be processed MYSQL connection error 2304 ');
-			$('.popupgreen').slideDown();
-		});
-		$('.itemblue').click(function() {
-			console.error('Vote could not be processed MYSQL connection error 2304 ');
-			$('.popupblue').slideDown();
-		});
-		$('.itemred').click(function() {
-			console.error('Vote could not be processed MYSQL connection error 2304 ');
-			$('.popupred').slideDown();
-		});
-		$('.itempurple').click(function() {
-			console.error('Vote could not be processed MYSQL connection error 2304 ');
-			$('.popuppurple').slideDown();
-		});
-		$('.ben').click(function() {
-			console.error('Vote could not be processed MYSQL connection error 2304 ');
-			$('.popup').css({
-				'background' : 'blue'
+		jQuery(function ($) {
+			$('#itemGreen').click(function () {
+				console.error('Vote could not be processed MYSQL connection error 2304 ');
+				$('.popupgreen').slideDown();
+			});
+			$('#itemBlue').click(function () {
+				console.error('Vote could not be processed MYSQL connection error 2304 ');
+				$('.popupblue').slideDown();
+			});
+			$('#itemRed').click(function () {
+				console.error('Vote could not be processed MYSQL connection error 2304 ');
+				$('.popupred').slideDown();
+			});
+			$('#itemPurple').click(function () {
+				console.error('Vote could not be processed MYSQL connection error 2304 ');
+				$('.popuppurple').slideDown();
+			});
+			$('.popupgreen a').click(function () {
+				console.log('.popup 010275 closed ');
+				$('.popupgreen').slideUp();
+			});
+			$('.popupblue a').click(function () {
+				console.log('.popup 120874closed ');
+				$('.popupblue').slideUp();
+			});
+			$('.popupred a').click(function () {
+				console.log('.popup 040506 closed  ');
+				$('.popupred').slideUp();
+			});
+			$('.popuppurple a').click(function () {
+				console.log('.popup 230404 closed ');
+				$('.popuppurple').slideUp();
 			});
 		});
-		$('.popupgreen a').click(function() {
-			console.log('.popup 010275 closed ');
-			$('.popupgreen').slideUp();
-		});
-		$('.popupblue a').click(function() {
-			console.log('.popup 120874closed ');
-			$('.popupblue').slideUp();
-		});
-		$('.popupred a').click(function() {
-			console.log('.popup 040506 closed  ');
-			$('.popupred').slideUp();
-		});
-		$('.popuppurple a').click(function() {
-			console.log('.popup 230404 closed ');
-			$('.popuppurple').slideUp();
-		});
-	});
 	</script>
-
 </head>
+
 <body>
-<!--
-//©Ben Stokmans
-//ben.stokmans@clz.nl
-//iHelp at Christelijk Lyceum zeist
--->
-<div class="itemgreen" class="item">
-	<div class="item-image">
-		<img src="#" alt="">
-	</div>
-	<p class="item-description">Groen</p>
-</div>
-
-<div class="itemblue">
-	<p class="item-description">Blauw</p>
-</div>
-
-<div class="itemred">
-
-	<p class="item-description">Rood</p>
-</div>
-
-<div class="itempurple">
-	<p class="item-description">Paars</p>
-</div>
-
-<div class="popupgreen">
-	<a class="popuplink">Je stem voor Groen is doorgegeven</a>
-	<a href="#">X</a>
-</div>
-<div class="popupblue">
-	<a class="popuplink">Je stem voor Blauw is doorgegeven</a>
-	<a href="#">X</a>
-</div>
-<div class="popupred">
-	<a class="popuplink">Je stem voor Rood is doorgegeven</a>
-	<a href="#">X</a>
-</div>
-<div class="popuppurple">
-	<a class="popuplink">Je stem voor Paars is doorgegeven</a>
-	<a href="#">X</a>
-</div>
+	<header>
+		<!-- Hier een uitleg waar je moet klikken-->
+	</header>
+	<article>
+		<form id="colorPoll">
+			<div class="item" id="itemGreen">
+				<p class="item-description">Groen</p>
+			</div>
+			<div class="item" id="itemBlue">
+				<p class="item-description">Blauw</p>
+			</div>
+			<div class="item" id="itemRed">
+				<p class="item-description">Rood</p>
+			</div>
+			<div class="item" id="itemPurple">
+				<p class="item-description">Paars</p>
+			</div>
+		</form>
+		<div class="popupgreen">
+			<a class="popuplink">Je stem voor Groen is doorgegeven</a>
+			<a href="#">X</a>
+		</div>
+		<div class="popupblue">
+			<a class="popuplink">Je stem voor Blauw is doorgegeven</a>
+			<a href="#">X</a>
+		</div>
+		<div class="popupred">
+			<a class="popuplink">Je stem voor Rood is doorgegeven</a>
+			<a href="#">X</a>
+		</div>
+		<div class="popuppurple">
+			<a class="popuplink">Je stem voor Paars is doorgegeven</a>
+			<a href="#">X</a>
+		</div>
+	</article>
 
 </body>
+
 </html>
