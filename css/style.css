@@ -77,7 +77,7 @@ sbody {
 	left: 50%;
 	width: 200px;
 	height: 200px;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-left: -180px;
 }
 .popupblue {
@@ -90,7 +90,7 @@ sbody {
 	left: 50%;
 	width: 200px;
 	height: 200px;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-left: -180px;
 }
 .popupred {
@@ -103,7 +103,7 @@ sbody {
 	left: 50%;
 	width: 200px;
 	height: 200px;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-left: -180px;
 }
 .popuppurple {
@@ -116,7 +116,7 @@ sbody {
 	left: 50%;
 	width: 200px;
 	height: 200px;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-left: -180px;
 }
 
@@ -127,6 +127,7 @@ sbody {
 	right: 15px;
 	border: 2px solid black;
 	padding:2px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .popupblue a {
 	text-decoration: none;
@@ -135,6 +136,7 @@ sbody {
 	right: 15px;
 	border: 2px solid black;
 	padding:2px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .popupred a {
 	text-decoration: none;
@@ -143,6 +145,7 @@ sbody {
 	right: 15px;
 	border: 2px solid black;
 	padding:2px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .popuppurple a {
 	text-decoration: none;
@@ -150,7 +153,8 @@ sbody {
 	top: 15px;
 	right: 15px;
 	border: 2px solid black;
-	padding:2px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 a:link {
     color: black;
@@ -214,6 +218,8 @@ ol {
 a.popuplink {
 	margin-right: 10px;
 	border: none;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 p {
 	margin-left: 2px;
