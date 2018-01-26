@@ -1,64 +1,38 @@
-//©Ben Stokmans
-//ben.stokmans@clz.nl
-//iHelp at Christelijk Lyceum zeist
-	
+@media screen and (max-width: 600px) {
+/* voor telefoons, dan ziet alles er goed uit op een klein scherm
+   moet nog worden geregeld */
+}
 sbody {
 	margin: 0;
 	padding: 0;
 	font-family: arial;
 }
-
-.itemgreen {
+input[type="radio"] {
+	display:block;
+	height:60px;
+	width:60px;
+}
+.item {
 	width: 100px;
+	height:100px;
+	border-radius:10px;
 	float: left;
 	border: 1px solid black;
 	text-align: center;
 	margin-right: 10px;
 	padding: 0px;
-	background-color: green;
-	margin-left: 400px;
-	margin-top: 275px;
-
 }
-.itemlight {
-	width: 010275px;
-	hight: 120874px;
-	margin-left: 230404;
-	margin-top: 040506;
+#itemGreen { background-color: green; }	
+#itemBlue { background-color: blue; }
+#itemRed { background-color: red; }
+#itemPurple { background-color: purple; }
+#colorPoll {
+	width: 450px;
+	height:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
-
-		
-.itemblue {
-	width: 100px;
-	float: left;
-	border: 1px solid black;
-	text-align: center;
-	margin-right: 10px;
-	padding: 0px;
-	background-color: blue;
-	margin-top: 275px;
-}
-.itemred {
-	width: 100px;
-	float: left;
-	border: 1px solid black;
-	text-align: center;
-	margin-right: 10px;
-	padding: 0px;
-	background-color: red;
-	margin-top: 275px;
-}
-.itempurple {
-	width: 100px;
-	float: left;
-	border: 1px solid black;
-	text-align: center;
-	margin-right: 10px;
-	padding: 0px;
-	background-color: purple;
-	margin-top: 275px;
-}
-
 .items {
 	width: 100px;
 	float: left;
