@@ -1,17 +1,4 @@
-@media screen and (max-width: 600px) {
-/* voor telefoons, dan ziet alles er goed uit op een klein scherm
-   moet nog worden geregeld */
-}
-sbody {
-	margin: 0;
-	padding: 0;
-	font-family: arial;
-}
-input[type="radio"] {
-	display:block;
-	height:60px;
-	width:60px;
-}
+body { background-color: #203371; }
 .item {
 	width: 100px;
 	height:100px;
@@ -19,8 +6,9 @@ input[type="radio"] {
 	float: left;
 	border: 1px solid black;
 	text-align: center;
-	margin-right: 10px;
-	padding: 0px;
+	margin: 5px;
+	font-size:1em;
+	font-family:inherit;
 }
 #itemGreen { background-color: green; }	
 #itemBlue { background-color: blue; }
@@ -28,217 +16,52 @@ input[type="radio"] {
 #itemPurple { background-color: purple; }
 #colorPoll {
 	width: 450px;
-	height:100%;
+	height:120px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 }
-.items {
-	width: 100px;
-	float: left;
-	border: 1px solid black;
-	text-align: center;
-	margin-right: 10px;
-	padding: 0px;
+#selection {
+	display:block;
+	width:500px;
+	height:110px;
+	background-color:#239b81;
+	border:1px solid black;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5px;
+	padding:5px;
+	padding-top:2px;
 }
-.itemfirst {
-	width: 100px;
-	float: left;
-	border: 1px solid black;
-	text-align: center;
-	margin-right: 10px;
-	padding: 0px;
+#selection p {
+	font-size:1.3em;
+	float:left;
 }
-.lastitem {
-	width: 200px;
+#selectedColorPreview {
+	background-color:white;
+	width:200px;
+	margin-left:20px;
 }
-
-.popupgreen {
-	display: none;
-	background: green;
-	padding: 20px;
-	border: 2px solid black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 200px;
-	margin-top: 0px;
-	margin-left: -120px;
+#selection input {
+	vertical-align: -50px;
 }
-.popupblue {
-	display: none;
-	background: blue;
-	padding: 20px;
-	border: 2px solid black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 200px;
-	margin-top: 0px;
-	margin-left: -120px;
-}
-.popupred {
-	display: none;
-	background: red;
-	padding: 20px;
-	border: 2px solid black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 200px;
-	margin-top: 0px;
-	margin-left: -120px;
-}
-.popuppurple {
-	display: none;
-	background: purple;
-	padding: 20px;
-	border: 2px solid black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 200px;
-	margin-top: 0px;
-	margin-left: -120px;
-}
-
-.popupgreen a {
-	text-decoration: none;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	border: 2px solid black;
-	padding:2px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.popupblue a {
-	text-decoration: none;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	border: 2px solid black;
-	padding:2px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.popupred a {
-	text-decoration: none;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	border: 2px solid black;
-	padding:2px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.popuppurple a {
-	text-decoration: none;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	border: 2px solid black;
-	padding: 2px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-a:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: blue;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-span.drop {
-	color: black;
-	border: 2px solid black;
-	background-color: lightgreen;
-	margin-bottom: 3px;
-}
-span.drop2 {
-	color: black;
-	border: 2px solid black;
-	background-color: lightgreen;
-	margin-bottom: 3px;
-}
-ol {
-    font-family: ;
-    font-size: 20px;
-    color: blue;
-    padding-right:;
-    border: 2px solid black;
-}
-a.popuplink {
-	margin-right: 10px;
-	border: none;
-	margin-left: 20px;
-	margin-top: 10px;
-}
-p {
-	margin-left: 2px;
-}
-div.block {
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	background-color: blue;
-}
-button.animate {
-	width: 200px;
-	height: 50px;
-	color: black;
-	background-color: lightblue;
-}
-button:focus {
-	outline: 0;
-}
-.linkh{
-	color: black;
-	float: left;
-}
-.inner1 {
-	float:left; 
-}
-.inner2 {
-	float: left; 
-	clear: left;
-}
-
-div.linkan {
-	position: fixed;
-	right: 0;
-	top: 0;
+@media screen and (max-width: 600px) {
+/* voor telefoons, dan ziet alles er goed uit op een klein scherm
+	moet nog worden geregeld */
+	#colorPoll {
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+	}
+	.item {
+		width:calc(25% - 10px);
+		font-size:1.1em;
+	}
+	#selection {
+		width:calc(100% - 10px);
+		margin:0;
+	}
+	#selectedColorPreview {
+		width:50%;
+	}
 }
