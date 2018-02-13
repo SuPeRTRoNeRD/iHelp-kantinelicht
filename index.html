@@ -2,11 +2,11 @@
 <html lang="nl">
 
 <head>
-	<title>Test</title>
+	<title>iHelp - KantineLED
+	</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.2.1.min.js"></script>
 	<script>
 		var hiddenValueIsCreated = false;
 		function select(choice) {
@@ -31,19 +31,20 @@
 	</header>
 	<article>
 		<div id="colorPoll">
-			<button class="item" id="itemRed" onclick="select('red');">Rood</button>
-			<button class="item" id="itemOrange" onclick="select('orange');">Oranje</button>
-			<button class="item" id="itemYellow" onclick="select('yellow');">Geel</button>
-			<button class="item" id="itemGreen" onclick="select('green');">Groen</button>
-			<button class="item" id="itemBlue" onclick="select('blue');">Blauw</button>
-			<button class="item" id="itemPurple" onclick="select('purple');">Paars</button>
-			<button class="item" id="itemPink" onclick="select('pink');">Roze</button>
-			<button class="item" id="itemWhite" onclick="select('white');">Wit</button>
+			<button class="item" id="iRed" onclick="select('red');"></button>
+			<button class="item" id="iOrange" onclick="select('orange');"></button>
+			<button class="item" id="iYellow" onclick="select('yellow');"></button>
+			<button class="item" id="iGreen" onclick="select('green');"></button>
+			<button class="item" id="iBlue" onclick="select('blue');"></button>
+			<button class="item" id="iPurple" onclick="select('purple');"></button>
+			<button class="item" id="iPink" onclick="select('pink');"></button>
+			<button class="item" id="iWhite" onclick="select('white');"></button>
 		</div>
 		<div id="selection">
 			<p>Je selectie:</p>
 			<div class="item" id="selectedColorPreview"></div>
-			<form action="error.html" class="submit" id="submitButton">
+			<form method="POST" action="" class="submit" id="submitButton">
+				<!--vul hierboven bij action de link naar de php pagina in waar de kleur naartoe moet!-->
 				<input id="submitButton" type="submit" value="Stem!" onsubmit="return false;">
 			</form>
 		</div>
