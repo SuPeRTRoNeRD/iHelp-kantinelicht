@@ -1,0 +1,20 @@
+code voor valentijns kleur
+---------------------------------------------
+import array
+from ola.ClientWrapper import ClientWrapper
+import time
+import sys
+
+wrapper = None
+loop_count = 0
+TICK_INTERVAL = 150 
+stopscript = time.time() + 60*5
+
+def DmxSent(state):
+  if not state.Succeeded():
+    wrapper.Stop()
+
+def SendDMXFrame():
+  wrapper.AddEvent(TICK_INTERVAL, SendDMXFrame)
+----------------------------------------------------------------
+kan je deze ff onder de naam senddmx_valentine.py in de pi zetten
