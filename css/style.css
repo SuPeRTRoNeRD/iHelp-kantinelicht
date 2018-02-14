@@ -1,5 +1,5 @@
-body { background-color: #203371; }
-.item {
+body { background-color: #2093C8; }
+#colorPoll button, #selectedColorPreview {
 		display:inline-block;
 		width: 90px;
 		height:90px;
@@ -9,66 +9,51 @@ body { background-color: #203371; }
 		outline: none;
 		border: none;
 	}
-	#iGreen { background-color: green; }	
-	#iBlue { background-color: blue; }
-	#iRed { background-color: red; }
-	#iPurple { background-color: purple; }
-	#iOrange { background-color: orange; }
-	#iYellow { background-color: yellow; }
-	#iPink { background-color: pink; }
-	#iWhite { background-color: white; }
+	#igreen { background-color: #007700; }	
+	#iblue { background-color: #0000FF; }
+	#ired { background-color: red; }
+	#ipurple { background-color: purple; }
+	#iorange { background-color: orange; }
+	#iyellow { background-color: yellow; }
+	#ipink { background-color: pink; }
+	#ilgreen { background-color: #00FF00; }
+	#iclz { background-color: #262CF4; }
 #colorPoll {
 	display:block;
 	height:100px;
-	width:800px;
+	width:900px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:10px;
 	overflow:hidden;
 }
-#selection {
+#formContainer {
 	display:block;
 	width:300px;
 	height:100px;
-	background-color:#239b81;
 	margin-left:auto;
 	margin-right:auto;
 	border-radius:5px;
-	padding:5px;
-	padding-top:2px;
 }
-#selection p {
-	font-size:1.3em;
-	float:left;
-	padding-top: 20px;
-}
-#selectedColorPreview {
-	background-color: #239b81;
-	width:90px;
-	margin-left:20px;
-}
-#selection input {
-	margin-top:48px;
-	float:right;
+#formContainer input {
+	background-color:#239b81;
+	height:100px;
+	width:300px;
+	display:block;
+	border-radius:25px;
+	font-size:2em;
 }
 #title {
 	text-align:center;
 }
-@media screen and (max-width: 810px) {
+.circled {
+	border:8px solid #00aeff !important;
+}
+@media screen and (max-width: 910px) {
 	#colorPoll {
 		width:100%;
 		margin-left:0;
 		margin-right:0;
 		height:auto;
-	}
-	#selection {
-		width:calc(100% - 10px);
-		margin:0;
-	}
-	#selection input {
-		margin-top:10px;
-		height:80px;
-		width:100px;
-		border:none;
 	}
 }
