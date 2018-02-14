@@ -20,7 +20,10 @@
 				hiddenValueIsCreated = true;
 			};
 			document.getElementById('selectedColor').setAttribute('value', choice);
-			document.getElementById('selectedColorPreview').style.backgroundColor = choice;
+			var arrayOfCircles =  document.getElementsByClassName('circled');
+			var leng = arrayOfCircles.length;
+			for(var i = 0; i < leng; i++){arrayOfCircles[i].classList = ''};
+			document.getElementById('i' + choice).classList = 'circled';
 		};
 	</script>
 </head>
@@ -31,26 +34,22 @@
 	</header>
 	<article>
 		<div id="colorPoll">
-			<button class="item" id="iRed" onclick="select('red');"></button>
-			<button class="item" id="iOrange" onclick="select('orange');"></button>
-			<button class="item" id="iYellow" onclick="select('yellow');"></button>
-			<button class="item" id="iGreen" onclick="select('green');"></button>
-			<button class="item" id="iBlue" onclick="select('blue');"></button>
-			<button class="item" id="iPurple" onclick="select('purple');"></button>
-			<button class="item" id="iPink" onclick="select('pink');"></button>
-			<button class="item" id="iWhite" onclick="select('white');"></button>
+			<button id="ired" onclick="select('red');"></button>
+			<button id="iorange" onclick="select('orange');"></button>
+			<button id="iyellow" onclick="select('yellow');"></button>
+			<button id="ilgreen" onclick="select('lgreen');"></button>
+			<button id="igreen" onclick="select('green');"></button>
+			<button id="iblue" onclick="select('blue');"></button>
+			<button id="iclz" onclick="select('clz');"></button>
+			<button id="ipurple" onclick="select('purple');"></button>
+			<button id="ipink" onclick="select('pink');"></button>
 		</div>
-		<div id="selection">
-			<p>Je selectie:</p>
-			<div class="item" id="selectedColorPreview"></div>
+		<div id="formContainer">
 			<form method="POST" action="" class="submit" id="submitButton">
-				<!--vul hierboven bij action de link naar de php pagina in waar de kleur naartoe moet!-->
 				<input id="submitButton" type="submit" value="Stem!" onsubmit="return false;">
 			</form>
 		</div>
 	</article>
-	<footer><!--Hier nog een verhaal over wie wij zijn--></footer>
-
 </body>
 
 </html>
