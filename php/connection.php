@@ -60,3 +60,4 @@ $res = $mysqli->query( "INSERT INTO stemkleuren ( kleur ) VALUES ( 'blue'   )" )
 $res = $mysqli->query( "INSERT INTO stemkleuren ( kleur ) VALUES ( 'purple' )" );
 $res = $mysqli->query( "INSERT INTO stemkleuren ( kleur ) VALUES ( 'pink'   )" );
 $res = $mysqli->query( "INSERT INTO stemkleuren ( kleur ) VALUES ( 'clz'    )" );
+?>
