@@ -1,5 +1,5 @@
 body { background-color: #2093C8; }
-#colorPoll button, #selectedColorPreview {
+#colorPoll button {
 		display:inline-block;
 		width: 90px;
 		height:90px;
@@ -17,7 +17,7 @@ body { background-color: #2093C8; }
 	#iyellow { background-color: yellow; }
 	#ipink { background-color: pink; }
 	#ilgreen { background-color: #00FF00; }
-	#iclz { background-color: #262CF4; }
+	#iclz { background-color: #003D82; }
 #colorPoll {
 	display:block;
 	height:100px;
@@ -34,6 +34,7 @@ body { background-color: #2093C8; }
 	margin-left:auto;
 	margin-right:auto;
 	border-radius:5px;
+	margin-bottom:10px;
 }
 #formContainer input {
 	background-color:#239b81;
@@ -43,12 +44,25 @@ body { background-color: #2093C8; }
 	border-radius:25px;
 	font-size:2em;
 }
-#title {
-	text-align:center;
+#timerContainer {
+	display:block;
+	background-color: #239B81;
+	height:100px;
+	width:300px;
+	border-radius: 25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:5px;
+	padding-left:10px;
+	font-size:1.2em;
 }
-.circled {
-	border:8px solid #00aeff !important;
+#timerTitle { width:50%; float:left;}
+#time {
+	width: 50%;
+	float:right;
 }
+#title { text-align:center; }
+.circled { border:8px solid #00aeff !important; }
 @media screen and (max-width: 910px) {
 	#colorPoll {
 		width:100%;
