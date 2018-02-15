@@ -20,9 +20,9 @@
 				hiddenValueIsCreated = true;
 			};
 			document.getElementById('selectedColor').setAttribute('value', choice);
-			var arrayOfCircles =  document.getElementsByClassName('circled');
+			var arrayOfCircles = document.getElementsByClassName('circled');
 			var leng = arrayOfCircles.length;
-			for(var i = 0; i < leng; i++){arrayOfCircles[i].classList = ''};
+			for (var i = 0; i < leng; i++) { arrayOfCircles[i].classList = '' };
 			document.getElementById('i' + choice).classList = 'circled';
 		};
 	</script>
@@ -49,7 +49,23 @@
 				<input id="submitButton" type="submit" value="Stem!" onsubmit="return false;">
 			</form>
 		</div>
+		<div id="timerContainer">
+			<p id="timerTitle">De volgende kleur komt over:</p>
+			<p id="time"></p>
+		</div>
 	</article>
+	<script>
+		setInterval(function () {
+			var now = new Date();
+			var minutesN = now.getMinutes();
+			var secondsN = now.getSeconds();
+			var nextTime = 4 - minutesN % 5;
+			var minutes = nextTime;
+			var seconds = 59 - secondsN;
+			if (seconds < 10) { seconds = '0' + seconds; };
+			now = minutes + ":" + seconds;
+			document.getElementById('time').innerHTML = "<br>" + now;
+		}, 1000);</script>
 </body>
 
 </html>
