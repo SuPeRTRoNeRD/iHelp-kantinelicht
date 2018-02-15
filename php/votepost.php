@@ -2,8 +2,8 @@
 
 require 'connection.php';
 $conn    = Connect();
-$vote   = $conn->real_escape_string($_POST['vote']);
-$query   = "INSERT into tb_cform (vote) VALUES('" . $name . "')";
+$vote   = $conn->real_escape_string($_POST['color']);
+$query   = "INSERT into kleuren (vote) VALUES('" . $vote . "')";
 $success = $conn->query($query);
 
 if (!$success) {
@@ -11,7 +11,7 @@ if (!$success) {
 
 }
 
-echo "Je vote is doorgegeven <br>";
+echo "Je stem is doorgegeven <br>";
 
 $conn->close();
 
