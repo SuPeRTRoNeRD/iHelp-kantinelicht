@@ -8,10 +8,11 @@ $success = $conn->query($query);
 
 if (!$success) {
     die("Couldn't enter data: ".$conn->error);
+    echo "error stem niet doorgegeven";
 
 }
 
-echo "Je stem is doorgegeven <br>";
+echo "Je stem is doorgegeven";
 
 $conn->close();
 
