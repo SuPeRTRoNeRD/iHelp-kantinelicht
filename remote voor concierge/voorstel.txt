@@ -1,0 +1,19 @@
+Voor zondag 4 februari willen de florissen weten wat we nodig hebben dus zet in dit document wat we nodig hebben.
+
+RASPBERRY PI 2 MODEL B*, incl. sd-kaart, powersupply _ optioneel zelf behuizing maken/aanschaffen _
+DMX interface
+http://www.bitwizard.nl/shop/DMX-interface-for-Raspberry-pi
+Samen met free OLA software
+https://bitwizard.nl/wiki/Dmx_interface_for_raspberry_pi
+In combinatie met de python API, om door middel van een server op de pi een python script te runnen. Dat om de x aantal minuten de kleur verandert.
+https://www.openlighting.org/ola/developer-documentation/python-api/#Installation
+https://github.com/peterdikant/rpi-ola-controller/blob/master/rpi-ola-controller.py
+Ethernet kabel x aantal meter
+https://stevenbreuls.com/2014/03/diy-usb-dmx-controller-for-under-10_2_ethernet_cable/
+Ene kant xlr header
+Andere kant kabel naar led driver, zie wiring in handleiding.
+http://www.tde-lighttech.nl/sites/default/files/ad-lc6_mkii_led_driver_manual_v1_1.pdf
+
+Groetjes,
+
+Jannick

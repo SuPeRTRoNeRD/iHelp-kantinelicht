@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<title>iHelp - KantineLED
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		var hiddenValueIsCreated = false;
+		function select(choice) {
+			if (!hiddenValueIsCreated) {
+				var x = document.createElement('INPUT');
+				x.setAttribute('type', 'hidden');
+				x.setAttribute('name', 'color');
+				x.setAttribute('id', 'selectedColor');
+				y = document.getElementById('submitButton');
+				y.appendChild(x);
+				hiddenValueIsCreated = true;
+			};
+			document.getElementById('selectedColor').setAttribute('value', choice);
+			var arrayOfCircles = document.getElementsByClassName('circled');
+			var leng = arrayOfCircles.length;
+			for (var i = 0; i < leng; i++) { arrayOfCircles[i].classList = '' };
+			document.getElementById('i' + choice).classList = 'circled';
+		};
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1 id="title">Selecteer kleur om door te geven</h1>
+	</header>
+	<article>
+		<div id="colorPoll">
+			<button id="ired" onclick="select('red');"></button>
+			<button id="iorange" onclick="select('orange');"></button>
+			<button id="iyellow" onclick="select('yellow');"></button>
+			<button id="ilgreen" onclick="select('lgreen');"></button>
+			<button id="igreen" onclick="select('green');"></button>
+			<button id="iblue" onclick="select('blue');"></button>
+			<button id="iclz" onclick="select('clz');"></button>
+			<button id="ipurple" onclick="select('purple');"></button>
+			<button id="ioff" onclick="select('ioff');">UIT</button>
+		</div>
+		<div id="formContainer">
+			<form method="POST" action="php/votepost.php" class="submit" id="submitButton">
+				<input id="submitButton" type="submit" value="Stem!" onsubmit="return false;">
+			</form>
+		</div>
+	</article>
+	<script>
+
+</html>
