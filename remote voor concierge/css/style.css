@@ -1,0 +1,77 @@
+body { background-color: #2093C8; }
+#colorPoll button {
+		display:inline-block;
+		width: 90px;
+		height:90px;
+		border-radius:50%;
+		float: left;
+		margin: 5px;
+		outline: none;
+		border: none;
+	}
+	#igreen { background-color: #007700; }	
+	#iblue { background-color: #0000FF; }
+	#ired { background-color: red; }
+	#ipurple { background-color: purple; }
+	#iorange { background-color: orange; }
+	#iyellow { background-color: yellow; }
+	#ipink { background-color: pink; }
+	#ilgreen { background-color: #00FF00; }
+	#iclz { background-color: #003D82; }
+	#ioff { background-color: grey }
+#colorPoll {
+	display:block;
+	height:100px;
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+button {
+	font-size: 30px;
+}
+#formContainer {
+	display:block;
+	width:300px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5px;
+	margin-bottom:10px;
+}
+#formContainer input {
+	background-color:#239b81;
+	height:100px;
+	width:300px;
+	display:block;
+	border-radius:25px;
+	font-size:2em;
+}
+#timerContainer {
+	display:block;
+	background-color: #239B81;
+	height:100px;
+	width:300px;
+	border-radius: 25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:5px;
+	padding-left:10px;
+	font-size:1.2em;
+}
+#timerTitle { width:50%; float:left;}
+#time {
+	width: 50%;
+	float:right;
+}
+#title { text-align:center; }
+.circled { border:8px solid #00aeff !important; }
+@media screen and (max-width: 910px) {
+	#colorPoll {
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+		height:auto;
+	}
+}
