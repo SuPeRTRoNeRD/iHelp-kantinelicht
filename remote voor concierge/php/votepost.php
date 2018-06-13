@@ -1,10 +1,12 @@
 <?php
 $dbhost = "localhost";
 $dbuser = "ihelp";
-$dbpass = "Tostiijzer2011";
+$dbpass = "***********";
 $dbname = "ihelpdmx";
  // Create connection
 
+//hier moeten de python functies direct worden doorgegeven in plaats van met de mysql database
+//ik heb alle kleuren al in de python folder op cd Documents/ihelpled/iHelp-kantinelicht/python senddmx_white.py = uit
 $PDO = new PDO('mysql:dbname='.$dbname.';host=localhost', $dbuser, $dbpass);
 $query = $PDO->prepare('UPDATE kleuren SET votes = votes + 1 WHERE kleur = :kleur');
 
